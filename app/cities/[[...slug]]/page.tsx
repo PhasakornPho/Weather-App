@@ -1,4 +1,5 @@
 "use Server";
+export const runtime = 'edge';
 import React, { Suspense } from "react";
 
 // import user components
