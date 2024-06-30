@@ -36,7 +36,7 @@ const Map = ({ location }: Props) => {
 
 			console.table(currentPosition.data);
 		}
-	}, []);
+	}, [currentPosition.data, location, setCurrentPosition]);
 
 	return (
 		<>

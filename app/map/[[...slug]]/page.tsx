@@ -4,7 +4,7 @@ import Map from "@/components/map/Map";
 //import Loading
 import MapLoading from "@/components/map/MapLoading";
 
-type Props = {};
+type Props = { params: { slug?: string[] } };
 
 const MapPage = async ({ params }: { params: { slug?: string[] } }) => {
 	const location = {} as { latitude: string; longitude: string };
