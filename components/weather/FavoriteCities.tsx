@@ -22,7 +22,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import { useAirPollutionStore } from "@/store/airPollutionStore";
-import { accuWeatherService } from "@/service/accuWeatherService";
+
 import {
 	ACCU_WEATHER_API_KEY,
 	ACCU_WEATHER_CURRENT_WEATHER,

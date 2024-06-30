@@ -1,8 +1,5 @@
 import { useEffect } from "react";
 
-// interface
-import { IHourlyForecastsResponse } from "@/interface/hourlyForecast";
-
 //service
 import { accuWeatherService } from "@/service/accuWeatherService";
 
@@ -10,7 +7,7 @@ import { accuWeatherService } from "@/service/accuWeatherService";
 import { TUseWeatherStore, useWeatherStore } from "@/store/weatherStore";
 import { TUseLocationStore, useLocationStore } from "@/store/locationStore";
 
-import { isBefore, subHours, subMinutes } from "date-fns";
+import { isBefore, subHours } from "date-fns";
 
 export const useHourlyForecastsHooks = () => {
 	const currentCity = useLocationStore((state) => state.currentCity);

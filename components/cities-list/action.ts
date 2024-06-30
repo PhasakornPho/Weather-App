@@ -1,7 +1,6 @@
 "use server";
 
 import { redirect } from "next/navigation";
-import { TWeatherCities } from "./CitiesList";
 
 export type FormState = {
 	message: FormDataEntryValue | null;

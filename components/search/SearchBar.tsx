@@ -12,7 +12,7 @@ import SvgClose from "../svg/close";
 import { motion } from "framer-motion";
 
 //server action
-import { searchAction, FormState } from "./action";
+import { searchAction } from "./action";
 import { useWeatherStore } from "@/store/weatherStore";
 import { ITopCitesWeatherResponse } from "@/interface/topCitesWeather";
 import { useLocationStore } from "@/store/locationStore";

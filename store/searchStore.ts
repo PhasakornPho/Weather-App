@@ -2,7 +2,6 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
-import { IPopularCities } from "@/interface/popularCities";
 import { ITopCitesWeatherResponse } from "@/interface/topCitesWeather";
 
 type SearchState = {

@@ -26,7 +26,7 @@ import {
 	TCurrentAirPollution,
 } from "@/store/airPollutionStore";
 
-import { isBefore, subHours, subSeconds } from "date-fns";
+import { isBefore, subHours } from "date-fns";
 
 export const callCurrentPositionsService = async (
 	setCurrentPosition: (value: TCurrentPosition) => void,

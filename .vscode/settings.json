@@ -3,12 +3,14 @@
     "ACCU",
     "AccuWeather",
     "apikey",
+    "clsx",
     "Colorstr",
     "countup",
     "defra",
     "dewpoint",
     "EBFM",
     "feelslike",
+    "Fhcpy",
     "Ggkr",
     "Gzkoq",
     "heatindex",
@@ -26,6 +28,7 @@
     "Shenzhen",
     "swiper",
     "tailwindcss",
+    "ZEXI",
     "zustand"
   ]
 }

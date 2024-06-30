@@ -1,5 +1,5 @@
 "use Server";
-import React, { Suspense, useState } from "react";
+import React, { Suspense } from "react";
 
 // import user components
 import CitesList from "@/components/cities-list/CitiesList";

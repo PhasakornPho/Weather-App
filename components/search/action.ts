@@ -1,6 +1,5 @@
 "use server";
 
-import { ITopCitesWeatherResponse } from "@/interface/topCitesWeather";
 import { redirect } from "next/navigation";
 
 export type FormState = {

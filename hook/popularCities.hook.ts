@@ -8,7 +8,7 @@ import { TUseWeatherStore, useWeatherStore } from "@/store/weatherStore";
 //service
 import { accuWeatherService } from "@/service/accuWeatherService";
 
-import { isBefore, subHours, subMinutes } from "date-fns";
+import { isBefore, subHours } from "date-fns";
 
 import { PopularCities } from "@/utils/citiesList";
 import { ITopCitesWeatherResponse, IPopularCities } from "@/interface/topCitesWeather";

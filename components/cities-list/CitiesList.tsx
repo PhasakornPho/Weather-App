@@ -13,7 +13,7 @@ import SvgAqiIndex from "@/components/svg/aqi-svg/SvgAqiIndex";
 
 // Import Interface
 import { ICitiesWeather, IGetCitiesWeather } from "@/interface/citiesWeather";
-import { IGetSearchCities, ISearchCities } from "@/interface/searchCities";
+import { IGetSearchCities } from "@/interface/searchCities";
 
 // Import Utils
 import { CitiesList } from "@/utils/citiesList";

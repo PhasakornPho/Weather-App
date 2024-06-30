@@ -12,7 +12,6 @@ import { format } from "date-fns";
 
 //store
 import { useWeatherStore } from "@/store/weatherStore";
-import { useDailyForecastsHook } from "@/hook/DailyForecasts.hook";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
