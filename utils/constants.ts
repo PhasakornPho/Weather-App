@@ -5,19 +5,19 @@ export const GEO_TO_CITY_ENDPOINT: string =
 
 // URL AccuWeather API
 export const ACCU_GEOLOCATION_SEARCH_ENDPOINT: string =
-	"http://dataservice.accuweather.com/locations/v1/cities/geoposition/search";
+	"https://dataservice.accuweather.com/locations/v1/cities/geoposition/search";
 export const ACCU_WEATHER_TOP_CITIES_ENDPOINT: string =
-	"http://dataservice.accuweather.com/currentconditions/v1/topcities";
-export const ACCU_WEATHER_CITY_SEARCH_ENDPOINT: string = `http://dataservice.accuweather.com/locations/v1/cities/search`;
-export const ACCU_WEATHER_CURRENT_WEATHER: string = `http://dataservice.accuweather.com/currentconditions/v1`;
-export const ACCU_WEATHER_DAILY_FORECAST_ENDPOINT: string = `http://dataservice.accuweather.com/forecasts/v1/daily/5day`;
-export const ACCU_WEATHER_HOURLY_FORECAST_ENDPOINT: string = `http://dataservice.accuweather.com/forecasts/v1/hourly/12hour`;
+	"https://dataservice.accuweather.com/currentconditions/v1/topcities";
+export const ACCU_WEATHER_CITY_SEARCH_ENDPOINT: string = `https://dataservice.accuweather.com/locations/v1/cities/search`;
+export const ACCU_WEATHER_CURRENT_WEATHER: string = `https://dataservice.accuweather.com/currentconditions/v1`;
+export const ACCU_WEATHER_DAILY_FORECAST_ENDPOINT: string = `https://dataservice.accuweather.com/forecasts/v1/daily/5day`;
+export const ACCU_WEATHER_HOURLY_FORECAST_ENDPOINT: string = `https://dataservice.accuweather.com/forecasts/v1/hourly/12hour`;
 // export const ACCU_WEATHER_API_KEY: string = "fake-api-key";
 export const ACCU_WEATHER_API_KEY: string = "z6aAAi7OuPEpBo0Fhcpy131WTeGNPtMF";
 
 //URL Open Weather API
 // export const OPEN_CURRENT_AIR_POLLUTION_ENDPOINT: string = `fake-api-key`;
-export const OPEN_CURRENT_AIR_POLLUTION_ENDPOINT: string = `http://api.openweathermap.org/data/2.5/air_pollution?`;
+export const OPEN_CURRENT_AIR_POLLUTION_ENDPOINT: string = `https://api.openweathermap.org/data/2.5/air_pollution?`;
 
 export const OPEN_CURRENT_API_KEY: string = `5dc51584d5a17e2660dfb50e3cf0c318`;
 
