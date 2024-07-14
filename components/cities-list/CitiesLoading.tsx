@@ -8,7 +8,7 @@ export default function Loading() {
 					return (
 						<div
 							key={`k${idex}`}
-							className='w-[98%] min-h-[20%] h-[20%] p-[2%] flex justify-between gap-x-[0.7%] items-center cursor-pointer bg-[rgb(15,20,40)] rounded-xl animate-pulse'
+							className='w-[98%] min-h-[20%] h-[20%] p-[2%] flex justify-between gap-x-[0.7%] items-center cursor-pointer bg-[rgba(85,140,185,1)] hover:bg-[rgba(85,140,185,0.65)] dark:bg-[rgb(15,20,40,0.6)] dark:hover:bg-[rgba(30,35,60,0.35)] rounded-xl animate-pulse'
 							// onClick={() => onClickHandler(item?.GeoPosition)}
 						>
 							{/* City Name */}

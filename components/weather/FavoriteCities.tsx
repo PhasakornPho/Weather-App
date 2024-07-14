@@ -143,82 +143,12 @@ const FavoriteCities = (props: Props) => {
 						};
 					});
 
-					console.table(newFavoriteCities);
 					setFavoriteCities({
 						timeStamp: Date.now(),
 						data: newFavoriteCities,
 						loading: false,
 						error: null,
 					});
-
-					// const newFavoriteCities = [...(favoriteCities.data ?? [])];
-					// console.log("Initiating");
-					// console.table(newFavoriteCities);
-
-					// // set current weather
-					// resultsCurrentWeather.forEach((result, index) => {
-					// 	if (result.status === "fulfilled") {
-					// 		console.log(`Request to ${isFetchList[index].id} succeeded with response:`);
-
-					// 		newFavoriteCities?.map((data) => {
-					// 			if (data.id === isFetchList[index].id) {
-					// 				console.log(`Updated ${data.id}`);
-					// 				console.table(newFavoriteCities);
-					// 				return {
-					// 					id: isFetchList[index].id,
-					// 					timeAdded: isFetchList[index].timeAdded,
-					// 					city: isFetchList[index].city,
-					// 					weather: result.value.data,
-					// 					airPollution: isFetchList[index].airPollution,
-					// 				};
-					// 			} else {
-					// 				return data;
-					// 			}
-					// 		});
-					// 	} else if (result.status === "rejected") {
-					// 		console.error(
-					// 			`Request to ${isFetchList[index].city?.EnglishName} failed with error:`,
-					// 			result.reason,
-					// 		);
-					// 	}
-					// });
-
-					// // set current air pollution
-					// resultsCurrentAirPollution.forEach((result, index) => {
-					// 	if (result.status === "fulfilled") {
-					// 		console.log(
-					// 			`Request to ${isFetchList[index].city?.EnglishName} succeeded with response:`,
-					// 		);
-
-					// 		newFavoriteCities?.forEach((data) => {
-					// 			if (data.id === isFetchList[index].id) {
-					// 				return (data = {
-					// 					id: isFetchList[index].id,
-					// 					timeAdded: Date.now(),
-					// 					city: isFetchList[index].city,
-					// 					weather: isFetchList[index].weather,
-					// 					airPollution: result.value.data,
-					// 				});
-					// 			} else {
-					// 				return data;
-					// 			}
-					// 		});
-					// 	} else if (result.status === "rejected") {
-					// 		console.error(
-					// 			`Request to ${isFetchList[index].city?.EnglishName} failed with error:`,
-					// 			result.reason,
-					// 		);
-					// 	}
-					// });
-
-					// console.log("new favorite cities");
-					// console.table(newFavoriteCities);
-					// setFavoriteCities({
-					// 	timeStamp: Date.now(),
-					// 	data: newFavoriteCities,
-					// 	loading: false,
-					// 	error: null,
-					// });
 				}
 			} catch (error) {
 				console.error("An error occurred while fetching data:", error);

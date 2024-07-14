@@ -27,9 +27,9 @@ const Nav = (props: Props) => {
 
 	return (
 		// Max Width 100px , Max height 900px
-		<nav className='bg-[rgb(33,42,59)] h-[100%] w-[6%] rounded-[var(--nav-rounded)] py-[1%] flex flex-col justify-start items-center gap-y-[10%]'>
+		<nav className='bg-[var(--nav-bg)] h-[100%] w-[6%] rounded-[var(--nav-rounded)] py-[1%] flex flex-col justify-start items-center gap-y-[10%]'>
 			{/* Logo */}
-			<div className='bg-[rgb(60,68,82)] w-[68%] aspect-square rounded-[var(--nav-logo-rounded)] p-[0.2vw] flex justify-center items-center'>
+			<div className='dark:bg-[rgb(60,68,82)]  bg-blue-600 w-[68%] aspect-square rounded-[var(--nav-logo-rounded)] p-[0.2vw] flex justify-center items-center'>
 				<Image
 					src={logoImage}
 					alt='Logo'
@@ -44,10 +44,10 @@ const Nav = (props: Props) => {
 						<Link
 							key={index}
 							href={link.path}
-							className={`capitalize group flex flex-col items-center justify-center w-[68%] h-[12%] gap-y-[2%] `}
+							className={`capitalize group flex flex-col items-center justify-center w-[68%] h-[12%] gap-y-[5%] `}
 						>
 							<div
-								className={`w-full h-[70%] relative aspect-square rounded-[var(--nav-item-rounded)] `}
+								className={`w-[90%] relative aspect-square rounded-[var(--nav-item-rounded)] `}
 							>
 								{(currentPath.includes(link.name.toLowerCase()) ||
 									(link.name === "Weather" && currentPath === "/")) && (

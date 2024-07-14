@@ -104,7 +104,7 @@ const SearchBar = (props: Props) => {
 				setInputCity("");
 				setInputFocus(false);
 			}}
-			className='w-[80%] h-full flex justify-between font-medium text-[110%] gap-x-[0.5vw]'
+			className='w-full h-full flex justify-between font-medium text-[110%] gap-x-[0.5vw]'
 		>
 			<div
 				className={`h-full w-full flex relative ${
@@ -113,7 +113,7 @@ const SearchBar = (props: Props) => {
 						: inputCity.length > 0 || inputFocus
 						? "rounded-[0.5vw] bg-[var(--bg-item-primary)]"
 						: "rounded-full"
-				} bg-[rgba(33,40,60,0.8)]  outline outline-[1%] outline-[rgba(33,40,60,0.9)] focus:outline-[rgb(110,120,150)] border-none flex flex-col justify-center`}
+				}  outline outline-[1%] bg-[rgba(85,140,185,0.8)] outline-[rgba(85,140,185,0.8)] dark:bg-[rgba(33,40,60,0.8)] dark:outline-[rgba(33,40,60,0.9)] dark:focus:outline-[rgb(110,120,150)] border-none flex flex-col justify-center`}
 			>
 				<label
 					htmlFor='search-input'
@@ -121,25 +121,17 @@ const SearchBar = (props: Props) => {
 						inputCity.length > 0 ||
 						(suggestions && suggestions.length > 0) ||
 						inputFocus
-							? "translate-y-[-50%] left-[3.6%]"
+							? "translate-y-[-50%] left-[4.6%]"
 							: "left-[3%]"
 					} absolute h-full w-fit flex justify-center items-center text-nowrap border-none bg-transparent transition-all`}
 				>
-					{/* ${
-						inputCity.length > 0 ||
-						(suggestions && suggestions.length > 0) ||
-						inputFocus
-							? "translate-y-[-0%] left-[20px] text-xs"
-							: "translate-y-[75%]"
-					} */}
-
 					<p
 						className={`${
 							inputCity.length > 0 ||
 							(suggestions && suggestions.length > 0) ||
 							inputFocus
-								? "text-[70%]"
-								: "text-[95%]"
+								? "text-[70%] bg-[rgba(75,125,160,0.9)] p-[3%_8%] rounded-md dark:bg-[rgba(33,40,60,0.8)]"
+								: "text-[95%] "
 						}`}
 					>
 						Search for cities
@@ -169,7 +161,7 @@ const SearchBar = (props: Props) => {
 						(suggestions && suggestions.length > 0) ||
 						inputFocus) && (
 						<SvgClose
-							className='h-[80%] cursor-pointer hover:opacity-[0.6] hover:scale-[1.1] fill-[rgb(0,0,0)] dark:fill-[rgba(255,255,255,0.9)]'
+							className='h-[80%] cursor-pointer hover:opacity-[0.6] hover:scale-[1.1] fill-[rgba(255,255,255,0.9)]'
 							onClick={onCloseHandler}
 						/>
 					)}

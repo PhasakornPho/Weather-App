@@ -27,14 +27,14 @@ const SortCities = ({ SortOption, Query }: Props) => {
 		<form className='h-full w-full flex items-center justify-end gap-x-[10px]'>
 			<label
 				htmlFor='sort'
-				className='capitalize font-medium text-sm text-gray-200 hover:text-gray-100 cursor-pointer w-fit'
+				className='capitalize font-medium text-sm text-[rgba(255,255,255,0.85)] dark:text-gray-200 hover:text-gray-100 cursor-pointer w-fit'
 			>
 				Sort By
 			</label>
 			<select
 				name='sort'
 				id='sort'
-				className='h-fit w-fit bg-gray-700 border border-gray-600 placeholder-gray-400 text-white text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 p-[1%_2%] capitalize'
+				className='h-fit w-fit bg-blue-500 border-blue-600 dark:bg-gray-700 border dark:border-gray-600 placeholder-gray-400 text-white text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 p-[1%_2%] capitalize'
 				onChange={sortHandlerChange}
 				value={SortOption}
 			>

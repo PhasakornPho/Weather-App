@@ -15,9 +15,6 @@ const Map = ({ location }: Props) => {
 
 	useEffect(() => {
 		if (location?.latitude && location?.longitude) {
-			console.log("setCurrentPosition");
-			console.table(location);
-
 			setCurrentPosition({
 				timeStamp: Date.now(),
 				data: {
@@ -36,7 +33,7 @@ const Map = ({ location }: Props) => {
 
 			console.table(currentPosition.data);
 		}
-	}, [currentPosition.data, location, setCurrentPosition]);
+	}, []);
 
 	return (
 		<>

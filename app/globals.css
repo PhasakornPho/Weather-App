@@ -37,12 +37,18 @@
 		--radius: 0.5rem;
 
 		/* User */
+		/* body */
+		--bg-shader-1: rgba(190, 220, 240, 0.8);
+		--bg-shader-2: rgba(120, 160, 195, 0.8);
+		--bg-shader-3: rgba(85, 140, 185, 0.8);
+		--bg-shader-4: rgba(50, 140, 215, 0.8);
 		/* Nav css */
 		--nav-rounded: 1.15rem;
-
+		--nav-bg: rgba(85, 140, 185, 0.8);
 		--nav-logo-rounded: 1.25rem;
 
-		--nav-item-bg-selected: rgb(12, 115, 175);
+		/* rgb(10, 70, 200) */
+		--nav-item-bg-selected: rgb(60, 165, 250, 0.8);
 		--nav-item-bg-hover: rgba(0, 25, 55, 0.9);
 		--nav-item-rounded: 0.75rem;
 
@@ -55,11 +61,11 @@
 		--nav-text-hover: rgba(255, 255, 255, 1);
 
 		--bg-primary: rgb(20, 40, 60);
-		--bg-secondary: rgba(33, 40, 60, 0.85);
+		--bg-secondary: rgba(85, 140, 185, 0.65);
 
-		--bg-item-primary: rgb(20, 30, 45);
-		--bg-item-primary-transparent: rgb(20, 30, 45, 0.95);
-		--bg-item-secondary: rgba(20, 30, 45, 0.6);
+		--bg-item-primary: rgba(90, 170, 240, 0.8);
+		--bg-item-primary-transparent: rgba(90, 170, 240, 0.6);
+		--bg-item-secondary: rgba(90, 170, 240, 0.4);
 		--bg-item-select: rgb(5, 15, 30);
 	}
 
@@ -93,10 +99,14 @@
 		--ring: 212.7 26.8% 83.9%;
 
 		/* User */
-
+		/* bg */
+		--bg-shader-1: rgba(69, 88, 117, 0.9);
+		--bg-shader-2: rgba(43, 63, 94, 0.9);
+		--bg-shader-3: rgba(25, 42, 66, 0.9);
+		--bg-shader-4: rgba(10, 18, 30, 0.9);
 		/* Nav css */
 		--nav-rounded: 1.15rem;
-
+		--nav-bg: rgb(33, 42, 59);
 		--nav-logo-rounded: 1.25rem;
 
 		--nav-item-bg-selected: rgba(10, 25, 50, 1);
@@ -126,32 +136,32 @@
 		@apply border-border font-["Nunito",sans-serif];
 	}
 	body {
-		@apply bg-background text-foreground w-[100vw] h-[100vh];
+		@apply bg-background text-foreground w-[100vw] h-[100vh] text-white fill-gray-100 bg-[url("../public/background/sea.jpg")] dark:bg-[url("../public/background/moon.png")] bg-cover transition-all duration-500;
 	}
 }
 
-.main-background-dark {
-	background: rgb(69, 88, 117);
+.main-background {
+	background: var(--bg-shader-1);
 	background: -moz-linear-gradient(
 		120deg,
-		rgba(69, 88, 117, 1) 35%,
-		rgba(43, 63, 94, 1) 65%,
-		rgba(25, 42, 66, 1) 80%,
-		rgba(10, 18, 30, 1) 100%
+		var(--bg-shader-1) 35%,
+		var(--bg-shader-2) 65%,
+		var(--bg-shader-3) 80%,
+		var(--bg-shader-4) 100%
 	);
 	background: -webkit-linear-gradient(
 		120deg,
-		rgba(69, 88, 117, 1) 35%,
-		rgba(43, 63, 94, 1) 65%,
-		rgba(25, 42, 66, 1) 80%,
-		rgba(10, 18, 30, 1) 100%
+		var(--bg-shader-1) 35%,
+		var(--bg-shader-2) 65%,
+		var(--bg-shader-3) 80%,
+		var(--bg-shader-4) 100%
 	);
 	background: linear-gradient(
 		120deg,
-		rgba(69, 88, 117, 1) 35%,
-		rgba(43, 63, 94, 1) 65%,
-		rgba(25, 42, 66, 1) 80%,
-		rgba(10, 18, 30, 1) 100%
+		var(--bg-shader-1) 35%,
+		var(--bg-shader-2) 65%,
+		var(--bg-shader-3) 80%,
+		var(--bg-shader-4) 100%
 	);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#455875",endColorstr="#0a121e",GradientType=1);
 }

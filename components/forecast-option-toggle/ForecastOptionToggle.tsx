@@ -18,7 +18,7 @@ const ForecastOptionToggle = ({ layoutId }: Props) => {
 
 	return (
 		<div className='relative h-[100%] min-h-[3.8vw] w-[20%] flex justify-center items-center'>
-			<div className='relative bg-[rgba(51,65,91,0.6)] flex rounded-[0.3vw] h-[45%] w-[100%] p-[2%]'>
+			<div className='relative bg-blue-400 dark:bg-[rgba(51,65,91,0.6)] flex rounded-[0.3vw] h-[45%] w-[100%] p-[2%]'>
 				{forecastOption.map((item, index) => {
 					return (
 						<div
@@ -33,11 +33,11 @@ const ForecastOptionToggle = ({ layoutId }: Props) => {
 										duration: 0.8,
 									}}
 									layoutId={layoutId}
-									className={`selection bg-[rgb(31,40,55)] h-[100%] w-[100%] rounded-[0.2vw]`}
+									className={`selection bg-blue-500 dark:bg-[rgb(31,40,55)] h-[100%] w-[100%] rounded-[0.2vw]`}
 								></motion.div>
 							) : (
 								<div
-									className={`bg-[rgba(51,65,91,0.6)] h-[100%] w-[100%] rounded-[0.2vw]`}
+									className={`bg-blue-400 dark:bg-[rgba(51,65,91,0.6)] h-[100%] w-[100%] rounded-[0.2vw]`}
 								></div>
 							)}
 						</div>

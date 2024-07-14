@@ -133,7 +133,7 @@ const AirConditions = (props: Props) => {
 							<div className='h-[100%] w-[15.8%] flex flex-col justify-center items-start rounded-[1.2vw] p-[1%_1%] gap-y-[10%] bg-[var(--bg-item-primary)]'>
 								<div className='h-[60%] w-[100%] flex justify-center items-center gap-x-[5%]'>
 									<div className='h-[100%] w-[40%] flex justify-center items-center'>
-										<SvgFeelsLike className='h-[100%] fill-[rgb(10,10,10)] dark:fill-[rgb(240,240,240)]' />
+										<SvgFeelsLike className='h-[100%] fill-[rgb(240,240,240)]' />
 									</div>
 									<div className='h-[100%] flex-1 flex justify-center items-center'>
 										<h1 className='uppercase text-sm'>Feels Like</h1>
@@ -168,7 +168,7 @@ const AirConditions = (props: Props) => {
 							<div className='h-[100%] w-[15.8%] flex flex-col justify-center items-start rounded-[1.2vw] p-[2%_2%] gap-y-[10%] bg-[var(--bg-item-primary)]'>
 								<div className='h-[60%] w-[100%] flex justify-center items-center gap-x-[5%]'>
 									<div className='h-[100%] w-[40%] flex justify-center items-center'>
-										<SvgWind className='h-[90%] fill-[rgb(10,10,10)] dark:fill-[rgb(240,240,240)]' />
+										<SvgWind className='h-[90%] fill-[rgb(240,240,240)]' />
 									</div>
 									<div className='h-[100%] flex-1 flex justify-center items-center'>
 										<h1 className='uppercase text-sm'>Wind</h1>
@@ -190,7 +190,7 @@ const AirConditions = (props: Props) => {
 							<div className='h-[100%] w-[15.8%] flex flex-col justify-center items-start rounded-[1.2vw] p-[2%_1%] gap-y-[10%] bg-[var(--bg-item-primary)]'>
 								<div className='h-[60%] w-[100%] flex justify-center items-center gap-x-[5%]'>
 									<div className='h-[100%] w-[40%] flex justify-center items-center'>
-										<SvgRain className='h-[90%] fill-[rgb(10,10,10)] dark:fill-[rgb(240,240,240)]' />
+										<SvgRain className='h-[90%] fill-[rgb(240,240,240)]' />
 									</div>
 									<div className='h-[100%] flex-1 flex justify-center items-center'>
 										<h1 className='uppercase text-sm'>Chance of rain</h1>
@@ -209,7 +209,7 @@ const AirConditions = (props: Props) => {
 							<div className='h-[100%] w-[15.8%] flex flex-col justify-center items-start rounded-[1.2vw] p-[2%_2%] gap-y-[10%] bg-[var(--bg-item-primary)]'>
 								<div className='h-[60%] w-[100%] flex justify-center items-center gap-x-[5%]'>
 									<div className='h-[100%] w-[40%] flex justify-center items-center'>
-										<SvgUV className='h-[90%] fill-[rgb(10,10,10)] dark:fill-[rgb(240,240,240)]' />
+										<SvgUV className='h-[90%] fill-[rgb(240,240,240)]' />
 									</div>
 									<div className='h-[100%] flex-1 flex justify-center items-center'>
 										<h1 className='uppercase text-sm text-center'>UV index</h1>
@@ -231,7 +231,7 @@ const AirConditions = (props: Props) => {
 							<div className='h-[100%] w-[15.8%] flex flex-col justify-center items-start rounded-[1.2vw] p-[2%_2%] gap-y-[10%] bg-[var(--bg-item-primary)]'>
 								<div className='h-[60%] w-[100%] flex justify-center items-center gap-x-[5%]'>
 									<div className='h-[100%] w-[40%] flex justify-center items-center'>
-										<SvgHumidity className='h-[90%] fill-[rgb(10,10,10)] dark:fill-[rgb(240,240,240)]' />
+										<SvgHumidity className='h-[90%] fill-[rgb(240,240,240)]' />
 									</div>
 									<div className='h-[100%] flex-1 flex justify-center items-center'>
 										<h1 className='uppercase text-sm'>Humidity</h1>
@@ -259,7 +259,7 @@ const AirConditions = (props: Props) => {
                                             ?.list[0].components.pm2_5
                                     }
                                 /> */}
-										<SvgAqiIndex className='h-[90%] fill-[rgb(10,10,10)] dark:fill-[rgb(240,240,240)]' />
+										<SvgAqiIndex className='h-[90%] fill-[rgb(240,240,240)]' />
 									</div>
 									<div className='h-[100%] flex-1 flex justify-center items-center'>
 										<h1 className='uppercase text-sm'>AQI Index</h1>

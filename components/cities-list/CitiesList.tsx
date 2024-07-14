@@ -117,9 +117,6 @@ const sortBy = (data: TWeatherCities[], sort: string = "name (a-z)") => {
 const CitesList = async ({ SortOption, Query }: Props) => {
 	const citiesWeather = await searchCities(Query, 20, SortOption);
 
-	console.log("-------------Cities Weather-------------");
-	console.table(citiesWeather);
-
 	return (
 		<div className='flex-1 w-[100%] h-[70%] overflow-y-scroll no-scrollbar '>
 			<div className='flex-1 h-[100%] w-[100%] flex flex-col gap-y-[3%] overflow-x-scroll no-scrollbar rounded-lg'>
@@ -130,7 +127,7 @@ const CitesList = async ({ SortOption, Query }: Props) => {
 							href={`/weather/city/location/${item.Weather?.location.lat.toFixed(
 								7,
 							)}/${item.Weather?.location.lon.toFixed(7)}`}
-							className='w-[98%] min-h-[20%] h-[20%] p-[1%_2%] flex justify-between gap-x-[0.7%] items-center cursor-pointer rounded-xl bg-[rgb(15,20,40,0.6)] hover:bg-[rgba(30,35,60,0.35)]'
+							className='w-[98%] min-h-[20%] h-[20%] p-[1%_2%] flex justify-between gap-x-[0.7%] items-center cursor-pointer rounded-xl bg-[rgba(85,140,185,1)] hover:bg-[rgba(85,140,185,0.65)] dark:bg-[rgb(15,20,40,0.6)] dark:hover:bg-[rgba(30,35,60,0.35)]'
 						>
 							{/* City Name */}
 							<div className='w-[18%] h-[80%] flex items-center'>
@@ -154,7 +151,7 @@ const CitesList = async ({ SortOption, Query }: Props) => {
 							<div className='w-[8%] h-[90%] flex flex-col justify-around items-center'>
 								<h1 className='h-[15%] text-[70%]'>Feels like</h1>
 								<div className='h-[35%] w-[70%] flex justify-center items-center'>
-									<SvgFeelsLike className='w-[95%] fill-[rgb(10,10,10)] dark:fill-[rgb(240,240,240)]' />
+									<SvgFeelsLike className='w-[95%] fill-[rgb(240,240,240)]' />
 								</div>
 
 								<div className='h-[30%] flex justify-center items-center pt-[5px]'>
@@ -166,7 +163,7 @@ const CitesList = async ({ SortOption, Query }: Props) => {
 							<div className='w-[8%] h-[90%] flex flex-col justify-around items-center'>
 								<h1 className='h-[15%] text-[70%]'>Wind speed</h1>
 								<div className='h-[35%] w-[70%] flex justify-center items-center'>
-									<SvgWind className='w-[95%] fill-[rgb(10,10,10)] dark:fill-[rgb(240,240,240)]' />
+									<SvgWind className='w-[95%] fill-[rgb(240,240,240)]' />
 								</div>
 
 								<div className='h-[20%] flex justify-center items-center'>
@@ -180,7 +177,7 @@ const CitesList = async ({ SortOption, Query }: Props) => {
 							<div className='w-[8%] h-[90%] flex flex-col justify-around items-center'>
 								<h1 className='h-[15%] text-[70%]'>Precipitation</h1>
 								<div className='h-[35%] w-[70%] flex justify-center items-center'>
-									<SvgRain className='w-[95%] h-[100%] fill-[rgba(10,10,10,0.7)] dark:fill-[rgba(240,240,240,0.7)]' />
+									<SvgRain className='w-[95%] h-[100%] fill-[rgba(240,240,240,0.7)]' />
 								</div>
 
 								<div className='h-[20%] flex justify-center items-center'>
@@ -194,7 +191,7 @@ const CitesList = async ({ SortOption, Query }: Props) => {
 							<div className='w-[8%] h-[90%] flex flex-col justify-around items-center'>
 								<h1 className='h-[15%] text-[70%]'>Humidity</h1>
 								<div className='h-[35%] w-[70%] flex justify-center items-center'>
-									<SvgHumidity className='w-[95%] h-[100%] fill-[rgba(10,10,10,0.7)] dark:fill-[rgba(240,240,240,0.7)]' />
+									<SvgHumidity className='w-[95%] h-[100%] fill-[rgba(240,240,240,0.7)]' />
 								</div>
 
 								<div className='h-[20%] flex justify-center items-center'>
@@ -208,7 +205,7 @@ const CitesList = async ({ SortOption, Query }: Props) => {
 							<div className='w-[8%] h-[90%] flex flex-col justify-around items-center'>
 								<h1 className='h-[15%] text-[70%]'>UV Index</h1>
 								<div className='h-[35%] w-[70%] flex justify-center items-center'>
-									<SvgUV className='w-[95%] h-[100%] fill-[rgba(10,10,10,0.7)] dark:fill-[rgba(240,240,240,0.7)]' />
+									<SvgUV className='w-[95%] h-[100%] fill-[rgba(240,240,240,0.7)]' />
 								</div>
 
 								<div className='h-[20%] flex justify-center items-center'>
@@ -222,7 +219,7 @@ const CitesList = async ({ SortOption, Query }: Props) => {
 							<div className='w-[8%] h-[90%] flex flex-col justify-around items-center'>
 								<h1 className='h-[15%] text-[70%]'>AQI</h1>
 								<div className='h-[35%] w-[70%] flex justify-center items-center'>
-									<SvgAqiIndex className='w-[95%] h-[100%] fill-[rgba(10,10,10,0.7)] dark:fill-[rgba(240,240,240,0.7)]' />
+									<SvgAqiIndex className='w-[95%] h-[100%] fill-[rgba(240,240,240,0.7)]' />
 								</div>
 
 								<div className='h-[20%] flex justify-center items-center'>

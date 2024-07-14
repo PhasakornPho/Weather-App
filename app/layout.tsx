@@ -35,7 +35,7 @@ export default function RootLayout({
 					attribute='class'
 					defaultTheme='light'
 				>
-					<div className='relative main-background-dark flex justify-center items-center rounded-3xl w-11/12 h-[98%] max-w-[1500px] max-h-[950px] p-[1%] '>
+					<div className='relative main-background  flex justify-center items-center rounded-3xl w-11/12 h-[98%] max-w-[1500px] max-h-[950px] p-[1%] '>
 						{/* 2xl:h-[950px] 2xl:w-[1500px] xl:h-[760px] xl:w-[1200px] h-[602px] w-[950px] */}
 						<Nav />
 						<div className='flex-1 h-[100%] w-[90%] pl-[2%] flex flex-col items-start justify-start'>
@@ -50,10 +50,10 @@ export default function RootLayout({
 
 											{/* Popular and favorite cities */}
 											<aside className='h-[100%] w-[28%] flex flex-col justify-start items-center gap-y-[2%]'>
-												<div className='w-[100%] h-[28%] flex justify-center items-center rounded-[1.2vw] bg-[rgba(0,0,0,0.2)]'>
+												<div className='w-[100%] h-[28%] flex justify-center items-center rounded-[1.2vw] bg-[rgba(135,180,210,0.75)] dark:bg-[rgba(0,0,0,0.2)]'>
 													<FavoriteCities />
 												</div>
-												<div className='w-[100%] h-[70%] flex justify-center items-center rounded-[1.2vw] bg-[rgba(33,42,59,1)]'>
+												<div className='w-[100%] h-[70%] flex justify-center items-center rounded-[1.2vw] bg-[rgba(85,140,185,1)] dark:bg-[rgba(33,42,59,1)]'>
 													<PopularCities />
 												</div>
 											</aside>

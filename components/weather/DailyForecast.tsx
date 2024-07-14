@@ -147,7 +147,7 @@ const DailyForecast = (props: Props) => {
 											</span>
 											<span className='text-center h-[20%] font-medium animate-on-show'>
 												<sup className='h-[100%] font-medium text-white '>
-													<sup>°C</sup>
+													<sup>°F</sup>
 												</sup>
 											</span>
 										</div>

@@ -36,16 +36,6 @@ export async function searchAction(query: string, currentPath: string) {
 	console.log("currentPath: " + currentPath);
 
 	const param = currentPath.split("/");
-	console.log("---------Search param---------");
-	console.table(param);
-
-	// if (currentPath === "/") {
-	// 	redirect(`/cities/name%20(a-z)/${query}`);
-	// } else if (param[1] === "cities") {
-	// 	if (param[2] !== undefined) {
-	// 		redirect(`/${param[1]}/${param[2]}/${query}`);
-	// 	}
-	// }
 
 	gotoPage(param, query, currentPath);
 }
